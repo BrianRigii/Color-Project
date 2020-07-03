@@ -1,0 +1,10 @@
+.Pallete{
+    border: 2px solid red;
+    height: 100vh;
+    
+}
+.Pallete-colors {
+    display: flex;
+    flex-wrap: wrap;
+    height:  90vh;
+}

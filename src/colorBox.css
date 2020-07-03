@@ -1,0 +1,15 @@
+.colorBox {
+    width:20%;
+    height: 25% ;
+    margin: 0 auto;
+}
+.colorBox-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%; 
+}
+.colorBox-text p{
+    margin: 0;
+    padding: 0
+}
