@@ -17,14 +17,15 @@ class Colorbox extends Component {
     });
   }
   render() {
+    var format = this.props.format;
     return (
       <CopyToClipboard
-        text={`${this.props.color.hex}`}
+        text={`${this.props.color[format]}`}
         onCopy={this.toggleOverlay}
       >
         <div
           className="colorBox"
-          style={{ backgroundColor: this.props.color.hex }}
+          style={{ backgroundColor: this.props.color[format] }}
         >
           <span
             className={`over-lay ${this.state.overLayHidden && "show"}`}
@@ -32,7 +33,7 @@ class Colorbox extends Component {
           />
           <span className={`overlay-msg ${this.state.overLayHidden && "show"}`}>
             <h1>Copied</h1>
-            <p>{this.props.color.hex}</p>
+            <p>{this.props.color[format]}</p>
           </span>
           <div className="colorBox-text">
             <div className="copy-link">
